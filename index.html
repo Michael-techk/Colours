@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Colurs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+
+    <h1>Colours</h1>
+    <p class="explanation">Zaczynasz z 500 coins, wygrywasz jeśli wszystkie kolory się różnią, bądź wszystkie 3 są takie same</p>
+
+    <section class="game">
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+    </section>
+
+    <section class="play">
+      <input type="number" placeholder="Podaj stawkę" id="bid">
+      <button id="start">Zakręć!</button>
+    </section>
+
+    <section class="panel">TWOJE SRODKI PRZED KOLEJNĄ GRĄ TO: <span class="wallet"></span></section>
+
+    <section class="score">
+      <span class="result"></span> Za tobą <span class="number"></span> gier, w tym <span class="win"></span> wygranych
+      i <span class="loss"></span> przegranych
+    </section>
+
+  </div>
+  <script src="wallet.js"></script>
+  <script src="statistics.js"></script>
+  <script src="draws.js"></script>
+  <script src="result.js"></script>
+  <script src="game.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
